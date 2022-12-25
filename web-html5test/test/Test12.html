@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title></title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .time {
+      position: absolute;
+      width: 600px;
+      height: 300px;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      line-height: 300px;
+      font-size: 150px;
+    }
+	.date {
+	  position: absolute;
+	  width: 600px;
+	  height: 300px;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  right: 0;
+	  margin: auto;
+	  line-height: 100px;
+	  font-size: 50px;
+	}
+  </style>
+</head>
+
+<body>
+  <div class="date"></div>
+  <div class="time"></div>
+  <script>
+    function mydate(){
+		var date = new date()
+		let x = document.queryselector('.date');
+		let y = document.queryselector('.time');
+		x.innerhtml = date.tolocaledatestring();
+		y.innerhtml = date.tolocaletimestring();
+	}
+    setinterval(function () {
+		mydate() 
+		}, 1000)
+  </script>
+</body>
+
+</html>
