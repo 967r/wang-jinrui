@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://zhangqingtian2000.github.io/html5/1021/test6 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><input type="text" id="input">
+<h1>失去焦点获取value</h1>
+<script>
+    var input = document.getElementById("input")
+    input.onblur  = function ()
+    {
+        var valueInput = document.getElementById("input").value
+        alert(valueInput)
+    }
+</script>
+
+</body></html>
